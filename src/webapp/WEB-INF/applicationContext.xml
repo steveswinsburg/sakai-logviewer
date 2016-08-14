@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+ 	<bean id="org.sakaiproject.logviewer.business.LogViewerBusinessService"
+    	class="org.sakaiproject.logviewer.business.LogViewerBusinessService"
+        init-method="init"
+        destroy-method="destroy">
+        <property name="securityService" ref="org.sakaiproject.authz.api.SecurityService" />
+        <property name="serverConfigurationService" ref="org.sakaiproject.component.api.ServerConfigurationService" />
+	</bean>
+
+</beans>

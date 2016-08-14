@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd" >
+
+<body>
+<wicket:extend>
+	
+	<div class="logviewer-wrap">
+      	<pre wicket:id="logData"></pre>
+		<pre wicket:id="nextLog"></pre>
+	</div>
+	
+	<script type="text/javascript">
+	
+	//
+	// We are doing the following here:
+	// - append the content of "nextLog" to "logData"
+	// - remove "nextLog"
+	// - insert "nextLog" after "logData".
+	//
+	// Note nextLog is never displayed but is used as a buffer in the page
+	function doUpdate() {
+		$('#logData').append($('#nextLog').text());
+		$('#nextLog').remove();
+		$("<div id='nextLog'>").insertAfter($('#logData'));
+	}
+	
+	//var scroll = document.getElementById('messages');
+	//   scroll.scrollTop = scroll.scrollHeight;
+	//   scroll.animate({scrollTop: scroll.scrollHeight});
+	//or
+	//var objDiv = document.getElementById("your_div");
+//objDiv.scrollTop = objDiv.scrollHeight;
+	
+	
+	</script>
+	
+</wicket:extend>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<registration>
+	<tool id="sakai.logviewer" 
+		title="Log Viewer" 
+		description="View and query the application logs">
+
+		<!--  This tool will be made available to the following site types via Site Info > Edit Tools -->
+       	<category name="sakai.admin" />
+
+				
+    </tool>
+</registration>

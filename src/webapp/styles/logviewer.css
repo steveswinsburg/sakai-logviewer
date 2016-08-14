@@ -1,0 +1,18 @@
+/* allow the log line content to wrap to cater for different screen sizes */
+pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	margin: 0;
+}
+
+.logviewer-wrap {
+	height: 500px;
+	overflow: auto;
+}
+
+#nextLog {
+	display:none;
+}
